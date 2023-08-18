@@ -1,0 +1,197 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+.logo img {
+    width: 50px; /* Adjust the size of the logo image */
+    height: 38px;
+    margin-right: 10px; /* Add some spacing between logo and text */
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('_N9A17991.JPG');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 300px 0;
+    color: #50a2e6;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.welcome {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #50a2e6;
+}
+.welcome h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-out;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    animation: fadeInUp 1s 0.5s ease-out;
+}
+
+/* About section styles */
+.about {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Services section styles */
+.services {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style: none;
+}
+
+.services li {
+    margin: 10px 0;
+}
+
+/* Gallery section styles */
+.gallery {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+/* Contact section styles */
+.contact {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
